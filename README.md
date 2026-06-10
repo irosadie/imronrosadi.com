@@ -4,9 +4,9 @@
 
 # Imron Rosadi Portfolio
 
-Open source project — hasil **VIBE CODING** dari Google AI Studio yang dimigrasikan ke Vercel.
+Open source project — a **VIBE CODING** result from Google AI Studio, migrated to Vercel.
 
-> 🚀 **Vibe Coding:** Build with Google AI Studio → Deploy with Vercel
+> 🚀 **Vibe Coding:** Built with Google AI Studio → Deployed with Vercel
 
 ## Run Locally
 
@@ -18,4 +18,4 @@ Open source project — hasil **VIBE CODING** dari Google AI Studio yang dimigra
 3. Run the app:
    `npm run dev`
 
-> **Note:** `GEMINI_API_KEY` bersifat **opsional**. Fitur AI Consultant (ReVA) akan graceful fallback jika API key tidak tersedia — aplikasi tetap berfungsi penuh tanpa error.
+> **Note:** `GEMINI_API_KEY` is **optional**. The AI Consultant (ReVA) feature gracefully falls back if no API key is set — the app works fully without it.
