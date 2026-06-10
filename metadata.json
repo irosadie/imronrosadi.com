@@ -1,0 +1,8 @@
+{
+  "name": "Imron Rosadi Portfolio",
+  "description": "A professional, minimalist landing page for BinaryDev, featuring a clean design and an AI-powered project consultant using Gemini API.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}
