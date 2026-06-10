@@ -2,6 +2,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { siteConfig } from '../data/siteConfig';
+import { getYearsOfExperience } from '../utils/experience';
 
 interface AboutSectionProps {
   sectionRef: React.RefObject<HTMLElement | null>;
@@ -37,7 +38,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ sectionRef }) => {
           {/* Stats / Milestones */}
           <div className="p-12 md:p-20 rounded-[4rem] bg-white/[0.02] border border-white/5 flex flex-wrap gap-12 md:gap-24 justify-center items-center">
             <div className="text-center">
-              <span className="block text-4xl md:text-6xl font-black text-white mb-2">9+</span>
+              <span className="block text-4xl md:text-6xl font-black text-white mb-2">{getYearsOfExperience()}+</span>
               <span className="text-[10px] font-black text-blue-500 uppercase tracking-[0.3em]">Years Active</span>
             </div>
             <div className="text-center">

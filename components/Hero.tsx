@@ -1,6 +1,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { siteConfig } from '../data/siteConfig';
+import { getYearsOfExperience } from '../utils/experience';
 
 interface HeroProps {
   onConsultClick: () => void;

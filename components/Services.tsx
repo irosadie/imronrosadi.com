@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { siteConfig } from '../data/siteConfig';
+import { getYearsOfExperience } from '../utils/experience';
 
 const IconMap: Record<string, React.RefObject<React.ReactNode> | any> = {
   app: (
@@ -54,7 +55,7 @@ const Services: React.FC<ServicesProps> = ({ sectionRef }) => {
             <span className="w-10 h-[1px] bg-blue-500/30"></span>
           </div>
           <h2 className="text-6xl md:text-[6.5rem] font-black text-white tracking-tighter leading-[0.85] mb-10">
-            9+ Years of <br />
+            {getYearsOfExperience()}+ Years of <br />
             <span className="text-white/20">Experiences.</span>
           </h2>
         </div>

@@ -2,6 +2,7 @@
 import React from 'react';
 import { siteConfig } from '../data/siteConfig';
 import { useLanguage } from '../context/LanguageContext';
+import { getYearsOfExperience } from '../utils/experience';
 
 const SocialIcon = ({ name }: { name: string }) => {
   switch (name) {
@@ -58,8 +59,8 @@ const Footer: React.FC<FooterProps> = ({
             </button>
             <p className="text-white/40 max-w-md text-lg leading-relaxed mb-10">
               {t(
-                '9+ years of engineering robust interfaces. Specialized in high-performance frontend architecture and modern AI integrations.',
-                '9+ tahun pengalaman membangun antarmuka yang tangguh. Spesialis dalam arsitektur frontend performa tinggi dan integrasi AI modern.'
+                `${getYearsOfExperience()}+ years of engineering robust interfaces. Specialized in high-performance frontend architecture and modern AI integrations.`,
+                `${getYearsOfExperience()}+ tahun pengalaman membangun antarmuka yang tangguh. Spesialis dalam arsitektur frontend performa tinggi dan integrasi AI modern.`
               )}
             </p>
             <div className="flex gap-6">

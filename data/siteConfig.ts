@@ -12,7 +12,7 @@ export const siteConfig = {
     tagline: "The Hatless Engineer",
     title: "ENGINEERING FUTURE",
     titleItalic: "Frontend & AI Systems.",
-    description: "Software Engineer with 9 years of experience. Specialist in React, Next.js, Svelte, and exploring the frontiers of AI/ML (RAG & MCP).",
+    description: "Software Engineer with deep experience. Specialist in React, Next.js, Svelte, and exploring the frontiers of AI/ML (RAG & MCP).",
     ctaPrimary: "Ask My AI Assistant",
     ctaSecondary: "View Experience"
   },
@@ -21,7 +21,7 @@ export const siteConfig = {
     {
       id: 'frontend',
       title: 'Expert Frontend',
-      desc: '9 years specialized in building beautiful, high-performance UIs using React, Next.js, Svelte, and Solid.js.',
+      desc: 'Specialized in building beautiful, high-performance UIs using React, Next.js, Svelte, and Solid.js.',
       iconName: 'app'
     },
     {

@@ -1,7 +1,10 @@
 
 import { GoogleGenAI } from "@google/genai";
+import { getYearsOfExperience } from '../utils/experience';
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+
+const years = getYearsOfExperience();
 
 export const getAIResponse = async (userMessage: string) => {
   try {
@@ -9,7 +12,7 @@ export const getAIResponse = async (userMessage: string) => {
       model: "gemini-3-pro-preview",
       contents: userMessage,
       config: {
-        systemInstruction: `You are ReVA, the personal AI representative for IMRON ROSADI, a Senior Software Engineer with 9 years of experience.
+        systemInstruction: `You are ReVA, the personal AI representative for IMRON ROSADI, a Senior Software Engineer with ${years} years of experience.
 
         IMRON ROSADI'S PROFILE (BASED ON OFFICIAL RESUME):
         - IDENTITY: "The Hatless Engineer". Known for "Glass half full" personality.
